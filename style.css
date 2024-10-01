@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Free-hd-beautiful-sunset-photos.jpg'); /* Apni image ka URL yahan daalein */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(5px);
+    width: 90%; /* 90% width for smaller screens */
+    max-width: 400px; /* Maximum width */
+    height: auto; /* Auto height to adjust with content */
+    border: 1px solid #1d1b1b;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+}
+
+.container h1 {
+    color: #070707;
+}
+
+form {
+    width: 100%;
+}
+
+.input-type,
+.input-pass {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #0b0b0c;
+    position: relative;
+    border-radius: 25px;
+    margin-top: 1rem;
+}
+
+.input-type input,
+.input-pass input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 40px; /* Adjust padding */
+    background: transparent;
+    color: #080808;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.input-type i {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.remember-forget {
+    color: #09080a;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-forget a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14.5px;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+    background-color: #f1f0f0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.register-link {
+    color: #000000;
+    padding: 25px 0;
+    font-weight: 300;
+}
+
+.register-link a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5em; /* Adjust padding for smaller screens */
+    }
+
+    .input-type input,
+    .input-pass input {
+        padding: 15px 40px; /* Adjust padding for inputs */
+    }
+
+    .login-btn {
+        font-size: 16px; /* Smaller button font size */
+        height: 45px; /* Smaller button height */
+    }
+
+    .register-link {
+        padding: 15px 0; /* Adjust padding */
+    }
+}
